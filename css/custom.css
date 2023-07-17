@@ -1,0 +1,324 @@
+.wrapper{
+  width:100%;
+  height: auto;
+}
+
+
+/* header style */
+
+header{
+
+  width: 100%;
+  height: auto;
+  padding: 1.25rem 0;
+  
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+header .navi{
+  display: flex;
+  column-gap: var(--el-s-interval);
+
+
+
+}
+
+
+header .navi a{
+
+  font-weight:  600;
+  font-size: var(--f-n-size);
+  letter-spacing: 1px;
+  color: var(--f-m-color);
+  transition: all .4s;
+
+
+}
+
+
+header .navi a:hover,
+header .navi li.active a{
+
+  color: var(--f-g-color);
+
+
+}
+
+
+/* Hero Section Style*/
+
+.hero{[
+
+  padding: 2.5rem;
+]}
+
+.hero .container{
+  
+  display:flex;
+  column-gap: .9375rem;
+
+
+}
+
+.hero .container img{
+
+  width:100%;
+  height:100%;
+
+}
+
+
+
+.hero .container .left-side,
+.hero .container .right-side{
+
+  width:50%;
+  position: relative;
+
+
+}
+
+.hero .container .right-side{
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: .9375rem;
+
+
+}
+
+.hero .container .right-side > div{
+
+  width: calc(50% - .4688rem);
+  position: relative;
+
+
+  /* 패딩 값 반 나눈 값 */
+
+}
+  .hero .left-side .inside-txt{
+
+    position: absolute;
+    color: #fff; /*a, input 태그는 폰트 컬러 상속 안됨*/
+    _background-color: #eee; 
+    width:85%;
+    height: 100%;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    _align-items: center;
+
+    /*justify contents는 위아래 중앙임*/
+
+
+  }
+
+  .hero .left-side .inside-txt h4{
+
+    font-size: 3.25rem;
+    font-weight: 700;
+  }
+
+  .hero .left-side .inside-txt span{
+
+
+    font-style: italic;
+    font-weight: 400;
+    margin: .875rem 0 1.875rem;
+  }
+
+
+  .hero .right-side .inside-grid-txt {
+
+    position: absolute;
+    width:  100%;
+    height: 100%;
+    _background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.9375rem;
+    color: #fff;
+
+  }
+
+
+  .hero .right-side .inside-grid-txt h4{
+  
+  
+    font-weight: 700;
+    font-size: 1.5rem;
+
+
+  }
+
+  .hero .right-side .inside-grid-txt span{
+
+    font-style: italic;
+  }
+
+
+  .hero .right-side .hover-box{
+
+    position: absolute;
+    width: 90%;
+    height:90%;
+    background-color: rgba(42, 42, 42, 0.9);
+    /* alpha값이 투명도이고 이렇게하면 자식에게 상속안됨니당 */
+    color: #fff;
+    z-index: 999; /* static 아닌 포지션 요소가 겹쳤을 때 높은 숫자가 위로 올라감 */
+    _opacity: .5; /* 투명도는 텍스트(자식)에게도 상속됨 */
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+
+    /* 오패시티는 자리는 지키고 디스플레이논은 걍 없애는거 */
+   
+
+    transition:  all .4s;
+
+
+  }
+
+
+  .hero .container .right-side > div:hover .hover-box{
+    
+    opacity: 1;
+    visibility: visible;
+
+
+
+
+  }
+
+
+
+  .hero .right-side .hover-box h4{
+
+    font-size: 1.25rem;
+
+
+
+  }
+
+
+  .hero .right-side .hover-box span{
+
+    text-align: center;
+    font-size:  0.875rem;
+    padding: 0.75rem 0;
+    font-weight: 300;
+    
+    
+  }
+
+
+  /* SUB SECTION PADDDING */
+
+  .sub-section{
+
+    padding:5.625rem 0;
+
+
+
+  }
+
+  /* SECTION TITLE style */
+
+
+  .section-title{
+
+    width:100%;
+    height:auto;
+
+  }
+
+
+  .section-title h3{
+
+    font-size: 2.125rem;
+    font-weight: 700;
+    color: var(--f-m-color);
+  }
+
+  .section-title p{
+
+    font-size: 0.875rem;
+    color: var(--f-g-color);
+    font-style: italic;
+    font-weight: 400;
+
+  }
+
+  .sub-section .container{
+
+
+    display:flex;
+    column-gap: .9375rem;
+
+
+  }
+
+  .sub-section .container img{
+    width:100%;
+    height: 100%;
+  }
+
+  .sub-section .left-side,
+  .sub-section .right-side{
+
+    width:50%;
+    position: relative;
+    
+
+  }
+
+  .sub-section .left-side{
+
+
+
+  }
+
+  .sub-section .right-side{
+
+    background-color: #eee;
+  }
+
+
+  .sub-section .container .right-side{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .9375rem;
+  }
+
+  .sub-section .container .right-side > div{
+
+    position:relative;
+    width:;
+
+
+
+  }
+
+
+
+
+
